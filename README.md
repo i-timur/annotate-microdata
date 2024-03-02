@@ -1,3 +1,3 @@
-# Annotate microdata
+# Annotate with microdata
 
-## This tool lets you annotate html
+## This tool let you annotate your data with microdata
