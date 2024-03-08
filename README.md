@@ -3,6 +3,7 @@
 ## About the project
 
 This project aims to provide a simple way to annotate HTML with microdata that utilizes *Deep Learning* methods.
+
 The main motivation behind this project is to manage the tedious task of annotating HTML with microdata.
 
 ## Getting started
