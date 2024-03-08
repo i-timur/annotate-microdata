@@ -38,6 +38,7 @@ The main motivation behind this project is to manage the tedious task of annotat
 
 ## Roadmap
 
+- [ ] Add HTML validation
 - [ ] Add support for other than Schema.org vocabularies
 - [ ] Add support for JSX syntax
 
@@ -75,5 +76,7 @@ Project Link: [https://github.com/i-timur/annotate-with-microdata](https://githu
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Acknowledgments
+
+- [BERT](https://en.wikipedia.org/wiki/BERT_(language_model))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
