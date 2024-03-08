@@ -4,7 +4,7 @@
 
 ## About the project
 
-This project aims to provide a simple way to annotate HTML with microdata that utilizes *Deep Learning* methods.
+This project aims to provide a simple way to annotate HTML with microdata by utilizing *Deep Learning* methods.
 
 The main motivation behind this project is to manage the tedious task of annotating HTML with microdata. Microdata is part of the WHATWG HTML Standard and is used to nest metadata within existing content on web pages. Search engines greatly benefit from microdata and boost web pages in search results.
 
@@ -37,6 +37,9 @@ The main motivation behind this project is to manage the tedious task of annotat
 ## Usage
 
 ## Roadmap
+
+- [ ] Add support for other than Schema.org vocabularies
+- [ ] Add support for JSX syntax
 
 See the [open issues](https://github.com/i-timur/annotate-with-microdata/issues) for a full list of proposed features (and known issues).
 
