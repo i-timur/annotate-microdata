@@ -23,20 +23,20 @@ This project is made as part of thesis work in Institute of Information Technolo
 ### Installation
 
 - Clone repository
-    ```shell
-    git clone git@github.com:i-timur/annotate-with-microdata.git
-    ```
+  ```shell
+  git clone git@github.com:i-timur/annotate-with-microdata.git
+  ```
 - Setup virtual environment
   - MacOS
-      ```shell
-      python3 -m venv venv
-      source venv/bin/activate
-      ```
+    ```shell
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
   - Windows
-      ```shell
-      python3 -m venv venv
-      .\venv\Scripts\activate
-      ```
+    ```shell
+    python3 -m venv venv
+    .\venv\Scripts\activate
+    ```
   - Linux
     ```shell
     virtualenv venv
@@ -47,17 +47,17 @@ This project is made as part of thesis work in Institute of Information Technolo
     pip install -r requirements.txt
     ```
 - Install the package
-    ```shell
-    pip install .
-    ```
+  ```shell
+  pip install .
+  ```
 
-  <p align="right">(<a href="#readme-top">back to top</a>)</p>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-  ## Usage
+## Usage
 
-  ### Annotate HTML with microdata
+### Annotate HTML with microdata
 
-  Annotate HTML with microdata by passing HTML directly to the shell command
+Annotate HTML with microdata by passing HTML directly to the shell command
 
 ```shell
 microdata --inline <YOUR_HTML>
@@ -74,6 +74,27 @@ Set output file with `--output` flag
 ```shell
 microdata --inline <YOUR_HTML> --output <OUTPUT_FILE>
 ```
+
+Following entities are currently supported:
+- [X] Product
+- [X] Book
+- [X] Event
+- [X] Hotel
+- [X] JobPosting
+- [X] Movie
+- [X] Recipe
+- [X] Restraurant
+- [ ] Article
+- [ ] BlogPosting
+- [ ] Breadcrumbs
+- [ ] SiteNavigationElement
+- [ ] SearchAction
+- [ ] Person
+- [ ] Organization
+- [ ] LocalBusiness
+- [ ] Review
+- [ ] Offer
+- [ ] PostalAddress
 
 ## Roadmap
 
