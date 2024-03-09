@@ -17,6 +17,8 @@ This project is made as part of thesis work in Institute of Information Technolo
 ### Prerequisites
 
 - Python 3.9.6+
+- pip 24.0+
+- python3-virtualenv if running Linux
 
 ### Installation
 
@@ -25,18 +27,56 @@ This project is made as part of thesis work in Institute of Information Technolo
     git clone git@github.com:i-timur/annotate-with-microdata.git
     ```
 - Setup virtual environment
+  - MacOS
+      ```shell
+      python3 -m venv venv
+      source venv/bin/activate
+      ```
+  - Windows
+      ```shell
+      python3 -m venv venv
+      .\venv\Scripts\activate
+      ```
+  - Linux
     ```shell
-    python3 -m venv venv
+    virtualenv venv
     source venv/bin/activate
     ```
-- Install dependencies
-    ```shell
-    pip install -r requirements.txt
-    ```
+        
+      
+      
+  - Install dependencies
+      ```shell
+      pip install -r requirements.txt
+      ```
+  - Install the package
+      ```shell
+      pip install .
+      ```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+  <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Usage
+  ## Usage
+
+  ### Annotate HTML with microdata
+
+  Annotate HTML with microdata by passing HTML directly to the shell command
+
+```shell
+microdata --inline <YOUR_HTML>
+```
+
+or by passing a file with HTML
+
+```shell
+microdata --filepath <PATH_TO_FILE>
+```
+
+Set output file with `--output` flag
+
+```shell
+microdata --inline <YOUR_HTML> --output <OUTPUT_FILE>
+```
 
 ## Roadmap
 
