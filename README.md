@@ -42,17 +42,14 @@ This project is made as part of thesis work in Institute of Information Technolo
     virtualenv venv
     source venv/bin/activate
     ```
-        
-      
-      
-  - Install dependencies
-      ```shell
-      pip install -r requirements.txt
-      ```
-  - Install the package
-      ```shell
-      pip install .
-      ```
+- Install dependencies
+    ```shell
+    pip install -r requirements.txt
+    ```
+- Install the package
+    ```shell
+    pip install .
+    ```
 
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
