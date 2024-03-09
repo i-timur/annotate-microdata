@@ -46,7 +46,7 @@ This project is made as part of thesis work in Institute of Information Technolo
     ```shell
     pip install -r requirements.txt
     ```
-- Install the package
+- Install the package globally
   ```shell
   pip install .
   ```
