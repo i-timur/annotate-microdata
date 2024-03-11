@@ -43,9 +43,9 @@ This project is made as part of thesis work in Institute of Information Technolo
     source venv/bin/activate
     ```
 - Install dependencies
-    ```shell
-    pip install -r requirements.txt
-    ```
+  ```shell
+  pip install -r requirements.txt
+  ```
 - Install the package globally
   ```shell
   pip install .
@@ -68,6 +68,8 @@ or by passing a file with HTML
 ```shell
 microdata --filepath <PATH_TO_FILE>
 ```
+
+Before passing HTML, make sure that the HTML is valid and **wrapped with `<body>` tag**.
 
 Set output file with `--output` flag
 
@@ -99,7 +101,6 @@ Following entities are currently supported:
 ## Roadmap
 
 - [ ] Add HTML validation
-- [ ] Add support for other than Schema.org vocabularies
 - [ ] Add support for JSX syntax
 
 See the [open issues](https://github.com/i-timur/annotate-with-microdata/issues) for a full list of proposed features (and known issues).
@@ -137,6 +138,7 @@ Project Link: [https://github.com/i-timur/annotate-with-microdata](https://githu
 
 ## Acknowledgments
 
-- [BERT](https://en.wikipedia.org/wiki/BERT_(language_model))
+- [web-segment](https://github.com/liaocyintl/web-segment)
+- [bert-multilingual](https://github.com/google-research/bert/blob/master/multilingual.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
