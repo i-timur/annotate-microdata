@@ -60,7 +60,7 @@ This project is made as part of thesis work in Institute of Information Technolo
 Annotate HTML with microdata by passing HTML directly to the shell command
 
 ```shell
-microdata --inline <YOUR_HTML>
+microdata --inline '<YOUR_HTML>'
 ```
 
 or by passing a file with HTML
@@ -74,7 +74,7 @@ Before passing HTML, make sure that the HTML is valid and **wrapped with `<body>
 Set output file with `--output` flag
 
 ```shell
-microdata --inline <YOUR_HTML> --output <OUTPUT_FILE>
+microdata --inline '<YOUR_HTML>' --output <OUTPUT_FILE>
 ```
 
 Following entities are currently supported:
@@ -140,5 +140,6 @@ Project Link: [https://github.com/i-timur/annotate-with-microdata](https://githu
 
 - [web-segment](https://github.com/liaocyintl/web-segment)
 - [bert-multilingual](https://github.com/google-research/bert/blob/master/multilingual.md)
+- [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
