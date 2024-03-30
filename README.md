@@ -60,13 +60,13 @@ This project is made as part of thesis work in Institute of Information Technolo
 Annotate HTML with microdata by passing HTML directly to the shell command
 
 ```shell
-microdata --inline '<YOUR_HTML>'
+microdata annotate '<div>Hello, world!</div>'
 ```
 
 or by passing a file with HTML
 
 ```shell
-microdata --filepath <PATH_TO_FILE>
+microdata annotate ./path/to/file.html
 ```
 
 Before passing HTML, make sure that the HTML is valid and **wrapped with `<body>` tag**.
@@ -74,7 +74,7 @@ Before passing HTML, make sure that the HTML is valid and **wrapped with `<body>
 Set output file with `--output` flag
 
 ```shell
-microdata --inline '<YOUR_HTML>' --output <OUTPUT_FILE>
+microdata annotate ./path/to/file.html --output ./path/to/annotated_file.html
 ```
 
 Following entities are currently supported:
@@ -97,7 +97,6 @@ Following entities are currently supported:
 ## Roadmap
 
 - [ ] Add HTML validation
-- [ ] Add support for JSX syntax
 
 See the [open issues](https://github.com/i-timur/annotate-with-microdata/issues) for a full list of proposed features (and known issues).
 
