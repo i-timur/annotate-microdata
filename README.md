@@ -85,7 +85,7 @@ Following entities are currently supported:
 - [X] JobPosting
 - [X] Movie
 - [X] Recipe
-- [X] Restraurant
+- [X] Restaurant
 - [ ] Organization
 - [ ] Place
 - [ ] Person
