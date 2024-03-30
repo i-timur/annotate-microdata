@@ -48,7 +48,7 @@ This project is made as part of thesis work in Institute of Information Technolo
   ```
 - Install the package globally
   ```shell
-  pip install .
+  pip install -e .
   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -86,17 +86,13 @@ Following entities are currently supported:
 - [X] Movie
 - [X] Recipe
 - [X] Restraurant
-- [ ] Article
-- [ ] BlogPosting
-- [ ] Breadcrumbs
-- [ ] SiteNavigationElement
-- [ ] SearchAction
-- [ ] Person
 - [ ] Organization
-- [ ] LocalBusiness
-- [ ] Review
-- [ ] Offer
+- [ ] Place
+- [ ] Person
 - [ ] PostalAddress
+- [ ] Creative Work
+- [ ] LocalBusiness
+- [ ] Painting
 
 ## Roadmap
 
