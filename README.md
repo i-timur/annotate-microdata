@@ -16,7 +16,7 @@ This project is made as part of thesis work in Institute of Information Technolo
 
 ### Prerequisites
 
-- Python 3.9.6+
+- Python > 3.6
 - pip 24.0+
 - python3-virtualenv if running Linux
 
@@ -46,11 +46,11 @@ This project is made as part of thesis work in Institute of Information Technolo
   ```shell
   pip install -r requirements.txt
   ```
+- Install [this package](https://github.com/i-timur/learnhtml)
 - Install the package globally
   ```shell
   pip install -e .
   ```
-- Install [this package](https://github.com/i-timur/learnhtml)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
