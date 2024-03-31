@@ -50,6 +50,7 @@ This project is made as part of thesis work in Institute of Information Technolo
   ```shell
   pip install -e .
   ```
+- Install [this package](https://github.com/i-timur/learnhtml)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -69,13 +70,22 @@ or by passing a file with HTML
 microdata annotate ./path/to/file.html
 ```
 
-Before passing HTML, make sure that the HTML is valid and **wrapped with `<body>` tag**.
-
 Set output file with `--output` flag
 
 ```shell
 microdata annotate ./path/to/file.html --output ./path/to/annotated_file.html
 ```
+
+Pass `-f` flag to add preprocessing step. 
+This adds a step to remove all unrelated tags from the HTML. 
+This step is optional and works well only with the HTML that has enough context.
+Usually used with the HTML that is extracted from the **whole web page**.
+Adding this step may **change for the worse** the result of the annotation if the HTML is not extracted from the whole web page.
+
+Pass `-r` flag to *not classify* items that are related to the product entity.
+This flag is useful when the HTML contains a lot of product items and the model classifies them as products.
+
+Before passing HTML, make sure that the HTML is valid and **wrapped with `<body>` tag**.
 
 Following entities are currently supported:
 - [X] Product
