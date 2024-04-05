@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-# Annotate with microdata
+# Annotate With Microdata
 
 ## About the project
 
