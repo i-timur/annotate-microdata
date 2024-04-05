@@ -16,7 +16,7 @@ This project is made as part of thesis work in Institute of Information Technolo
 
 ### Prerequisites
 
-- Python > 3.6
+- Python == 3.7
 - pip 24.0+
 - python3-virtualenv if running Linux
 
@@ -58,17 +58,41 @@ This project is made as part of thesis work in Institute of Information Technolo
 
 ### Annotate HTML with microdata
 
-Annotate HTML with microdata by passing HTML directly to the shell command
+HTML used for commands below requires the following minimal structure:
 
-```shell
-microdata annotate '<div>Hello, world!</div>'
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page Title</title>
+  </head>
+  <body>
+    <!-- Content -->
+  </body>
 ```
 
-or by passing a file with HTML
+Annotate HTML by passing a URL to the shell command:
+
+```shell
+microdata annotate https://example.com
+```
+
+or by passing a path to the file with HTML:
 
 ```shell
 microdata annotate ./path/to/file.html
 ```
+
+***IMPORTANT:*** DO NOT format HTML, when saving it to a file, pass it *as is*.
+
+or by passing HTML directly to the shell command *(NOT RECOMMENDED)*:
+
+```shell
+microdata annotate <HTML>
+```
+
+***IMPORTANT:*** DO NOT format HTML, when passing it directly to the shell command, pass it *as is*.
 
 Set output file with `--output` flag
 
@@ -76,18 +100,26 @@ Set output file with `--output` flag
 microdata annotate ./path/to/file.html --output ./path/to/annotated_file.html
 ```
 
-Pass `-f` flag to add preprocessing step. 
-This adds a step to remove all unrelated tags from the HTML. 
-This step is optional and works well only with the HTML that has enough context.
-Usually used with the HTML that is extracted from the **whole web page**.
-Adding this step may **change for the worse** the result of the annotation if the HTML is not extracted from the whole web page.
-
-Pass `-r` flag to *not classify* items that are related to the product entity.
+Pass `--skip-products` flag to skip items that are related to the product entity.
 This flag is useful when the HTML contains a lot of product items and the model classifies them as products.
 
-Before passing HTML, make sure that the HTML is valid and **wrapped with `<body>` tag**.
+The confusion matrix below can give you the insight of the usage of this flag:
+
+![Confusion matrix](images/conf_matrix.jpg)
+
+The model misclassifies a lot of entities as products. This flag can help to avoid this issue.
+
+You can also see that the model struggles with choosing between the book and movie entities, but we can't do 
+anything about it because they are semantically similar.
+
+You can set confidence threshold with `--threshold` flag (*NOT RECOMMENDED*). The default value is 0.75.
+
+Pass `--verbose` flag to get more information about the process.
+
+You can also pass `--save-preprocessed` flag to save the preprocessed HTML to a file.
 
 Following entities are currently supported:
+
 - [X] Product
 - [X] Book
 - [X] Event
@@ -137,7 +169,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Timur - [Telegram](https://t.me/i_timur) - [i.timur0701@gmail.com](mailto:i.timur0701@gmail.com)
 
-Project Link: [https://github.com/i-timur/annotate-with-microdata](https://github.com/i-timur/annotate-with-microdata)
+Project Link: [https://github.com/i-timur/AnnotateWithMicrodata](https://github.com/i-timur/AnnotateWithMicrodata)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,6 +177,7 @@ Project Link: [https://github.com/i-timur/annotate-with-microdata](https://githu
 
 - [web-segment](https://github.com/liaocyintl/web-segment)
 - [bert-multilingual](https://github.com/google-research/bert/blob/master/multilingual.md)
+- [learnhtml](https://github.com/nikitautiu/learnhtml)
 - [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
