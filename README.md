@@ -94,7 +94,7 @@ microdata annotate <HTML>
 
 ***IMPORTANT:*** *DO NOT* format HTML, when passing it directly to the shell command, pass it *as is*.
 
-Set output file with `--output` flag
+Set output file with `--output` option:
 
 ```shell
 microdata annotate ./path/to/file.html --output ./path/to/annotated_file.html
