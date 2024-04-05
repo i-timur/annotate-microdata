@@ -84,7 +84,7 @@ or by passing a path to the file with HTML:
 microdata annotate ./path/to/file.html
 ```
 
-***IMPORTANT:*** DO NOT format HTML, when saving it to a file, pass it *as is*.
+***IMPORTANT:*** *DO NOT* format HTML, when saving it to a file, pass it *as is*.
 
 or by passing HTML directly to the shell command *(NOT RECOMMENDED)*:
 
@@ -92,7 +92,7 @@ or by passing HTML directly to the shell command *(NOT RECOMMENDED)*:
 microdata annotate <HTML>
 ```
 
-***IMPORTANT:*** DO NOT format HTML, when passing it directly to the shell command, pass it *as is*.
+***IMPORTANT:*** *DO NOT* format HTML, when passing it directly to the shell command, pass it *as is*.
 
 Set output file with `--output` flag
 
