@@ -114,8 +114,6 @@ anything about it because they are semantically similar.
 
 You can set confidence threshold with `--threshold` flag (*NOT RECOMMENDED*). The default value is 0.75.
 
-Pass `--verbose` flag to get more information about the process.
-
 You can also pass `--save-preprocessed` flag to save the preprocessed HTML to a file.
 
 Following entities are currently supported:
