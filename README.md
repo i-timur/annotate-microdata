@@ -2,7 +2,19 @@
 
 # Annotate With Microdata
 
-## About the project
+## Table of contents
+- [About the project](#about-the-project-)
+- [Getting started](#getting-started-)
+  - [Prerequisites](#prerequisites-)
+  - [Installation](#installation-)
+- [Usage](#usage-)
+- [Roadmap](#roadmap-)
+- [Contributing](#contributing-)
+- [License](#license-)
+- [Contact](#contact-)
+- [Acknowledgments](#acknowledgments-)
+
+## About the project [📌](#about-the-project-)
 
 This project aims to provide a simple way to annotate HTML with microdata by utilizing *Deep Learning* methods.
 
@@ -12,15 +24,15 @@ This project is made as part of thesis work in Institute of Information Technolo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Getting started
+## Getting started [📌](#getting-started-)
 
-### Prerequisites
+### Prerequisites [📌](#prerequisites-)
 
 - Python == 3.7
 - pip 24.0+
 - python3-virtualenv if running Linux
 
-### Installation
+### Installation [📌](#installation-)
 
 - Clone repository
   ```shell
@@ -54,7 +66,7 @@ This project is made as part of thesis work in Institute of Information Technolo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Usage
+## Usage [📌](#usage-)
 
 ### Annotate HTML with microdata
 
@@ -112,7 +124,7 @@ The model misclassifies a lot of entities as products. This flag can help to avo
 You can also see that the model struggles with choosing between the book and movie entities, but we can't do 
 anything about it because they are semantically similar.
 
-You can set confidence threshold with `--threshold` flag (*NOT RECOMMENDED*). The default value is 0.75.
+You can set confidence threshold with `--threshold` option (*NOT RECOMMENDED*). The default value is 0.75.
 
 You can also pass `--save-preprocessed` flag to save the preprocessed HTML to a file.
 
@@ -134,7 +146,7 @@ Following entities are currently supported:
 - [ ] LocalBusiness
 - [ ] Painting
 
-## Roadmap
+## Roadmap [📌](#roadmap-)
 
 - [ ] Add HTML validation
 
@@ -142,7 +154,7 @@ See the [open issues](https://github.com/i-timur/annotate-with-microdata/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contributing
+## Contributing [📌](#contributing-)
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
@@ -157,13 +169,13 @@ Don't forget to give the project a star! Thanks again!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## License
+## License [📌](#license-)
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Contact
+## Contact [📌](#contact-)
 
 Timur - [Telegram](https://t.me/i_timur) - [i.timur0701@gmail.com](mailto:i.timur0701@gmail.com)
 
@@ -171,7 +183,7 @@ Project Link: [https://github.com/i-timur/AnnotateWithMicrodata](https://github.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Acknowledgments
+## Acknowledgments [📌](#acknowledgments-)
 
 - [web-segment](https://github.com/liaocyintl/web-segment)
 - [bert-multilingual](https://github.com/google-research/bert/blob/master/multilingual.md)
