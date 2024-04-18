@@ -121,8 +121,7 @@ microdata annotate ./path/to/file.html --skip Product,Book
 
 Various texts may have similar semantic meanings, so for situations where the user already knows 
 that certain classes have a high level of semantic similarity with other classes, 
-or when the classification of a specific class is not required for other reasons. 
-This option can be useful in such cases.
+or when the classification of a specific class is not required for other reasons, use this flag
 
 The confusion matrix below can give you the insight of the usage of this flag:
 
