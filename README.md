@@ -8,6 +8,7 @@
   - [Prerequisites](#prerequisites-)
   - [Installation](#installation-)
 - [Usage](#usage-)
+- [Examples](#examples-)
 - [Roadmap](#roadmap-)
 - [Contributing](#contributing-)
 - [License](#license-)
@@ -112,17 +113,24 @@ Set output file with `--output` option:
 microdata annotate ./path/to/file.html --output ./path/to/annotated_file.html
 ```
 
-Pass `--skip-products` flag to skip items that are related to the product entity.
-This flag is useful when the HTML contains a lot of product items and the model classifies them as products.
+Use `--skip <CLASS>,<OTHER_CLASS>` option to skip items that are related to the specified classes:
+
+```shell
+microdata annotate ./path/to/file.html --skip Product,Book
+```
+
+Various texts may have similar semantic meanings, so for situations where the user already knows 
+that certain classes have a high level of semantic similarity with other classes, 
+or when the classification of a specific class is not required for other reasons. 
+This option can be useful in such cases.
 
 The confusion matrix below can give you the insight of the usage of this flag:
 
 ![Confusion matrix](images/conf_matrix.jpg)
 
-The model misclassifies a lot of entities as products. This flag can help to avoid this issue.
-
-You can also see that the model struggles with choosing between the book and movie entities, but we can't do 
-anything about it because they are semantically similar.
+The model can misclassify a lot of entities as products.
+You can also see that the model struggles with choosing between the book and movie entities.
+This flag can help to avoid this issue.
 
 You can set confidence threshold with `--threshold` option (*NOT RECOMMENDED*). The default value is 0.75.
 
@@ -145,6 +153,10 @@ Following entities are currently supported:
 - [ ] Creative Work
 - [ ] LocalBusiness
 - [ ] Painting
+
+## Examples [📌](#examples-)
+
+![Example 1](images/example-1.png)
 
 ## Roadmap [📌](#roadmap-)
 
