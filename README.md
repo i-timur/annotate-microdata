@@ -188,7 +188,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 ## Contact [📌](#contact-)
 
-Timur - [Telegram](https://t.me/i_timur) - [i.timur0701@gmail.com](mailto:i.timur0701@gmail.com)
+Timur - [i.timur0701@gmail.com](mailto:i.timur0701@gmail.com)
 
 Project Link: [https://github.com/i-timur/AnnotateWithMicrodata](https://github.com/i-timur/AnnotateWithMicrodata)
 
